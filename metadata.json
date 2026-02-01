@@ -1,0 +1,5 @@
+{
+  "name": "Hardware-ID Licensing System",
+  "description": "A professional management dashboard for hardware-locked software licensing, featuring license creation, HWID binding, and comprehensive analytics.",
+  "requestFramePermissions": []
+}
