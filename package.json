@@ -1,32 +1,29 @@
 {
-  "name": "hardware-id-licensing-system",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "server": "tsx server/index.ts",
-    "start": "tsx server/index.ts"
+  "name": "yallist",
+  "version": "3.1.1",
+  "description": "Yet Another Linked List",
+  "main": "yallist.js",
+  "directories": {
+    "test": "test"
   },
-  "dependencies": {
-    "tsx": "^4.21.0",
-    "bcrypt": "^6.0.0",
-    "cors": "^2.8.6",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
-    "lucide-react": "^0.563.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7"
-  },
+  "files": [
+    "yallist.js",
+    "iterator.js"
+  ],
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
-  }
+    "tap": "^12.1.0"
+  },
+  "scripts": {
+    "test": "tap test/*.js --100",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "postpublish": "git push origin --all; git push origin --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacs/yallist.git"
+  },
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "license": "ISC"
 }
